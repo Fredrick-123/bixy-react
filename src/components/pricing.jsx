@@ -1,12 +1,14 @@
 import { useState } from 'react'
  import redcircle from '../assets/red.svg'
+ import greencircle from '../assets/green.png'
+
 const Pricing = () => {
     const [isYearly, setIsYearly] = useState(false)
 
     const packages = [
-        { name: 'Start', monthlyPrice: '19', yearlyPrice: '199', description: 'Access to analytics with 3 months of historical data' , greencircle: '../assets/green.png' },
-        { name: 'Advance', monthlyPrice: '39', yearlyPrice: '399', description: 'Planning up to 2,000 pieces of content per month.' , greencircle: '../assets/red.svg'},
-        { name: 'Premium', monthlyPrice: '59', yearlyPrice: '599', description: 'Utillize the AI assistant for generating new copy ideas.' , greencircle: '../assets/green.png' }
+        { name: 'Start', monthlyPrice: '19', yearlyPrice: '199', description: 'Access to analytics with 3 months of historical data' , },
+        { name: 'Advance', monthlyPrice: '39', yearlyPrice: '399', description: 'Planning up to 2,000 pieces of content per month.' , },
+        { name: 'Premium', monthlyPrice: '59', yearlyPrice: '599', description: 'Utillize the AI assistant for generating new copy ideas.' ,},
     ]
     return (
         <div className='md:px-14 p-4 max-w-s mx-auto py-10' id='pricing'>
@@ -54,9 +56,9 @@ const Pricing = () => {
                                 </p>
                                 <ul className='mt-4  space-y-2 px-4'>
                                      <li className='flex gap-2 '> <img src={redcircle} alt="color green" className='w-5 h-5' /> Videos of Lessons</li>
-                                     <li className='flex gap-2 '> <img src={redcircle} alt="color green" className='w-5 h-5' /> Homework check</li>
+                                     <li className='flex gap-2 '> <img src={greencircle} alt="color green" className='w-5 h-5' /> Homework check</li>
                                      <li className='flex gap-2 '> <img src={redcircle} alt="color green" className='w-5 h-5' /> Additional practical task</li>
-                                     <li className='flex gap-2 '> <img src={redcircle} alt="color green" className='w-5 h-5' /> Monthly conferences </li>
+                                     <li className='flex gap-2 '> <img src={greencircle} alt="color green" className='w-5 h-5' /> Monthly conferences </li>
                                      <li className='flex gap-2 '> <img src={redcircle} alt="color green" className='w-5 h-5' /> Personal advice from teachers</li>
                                 </ul>
                                 <div className='w-full mx-auto flex mt-8 items-center justify-center'>
